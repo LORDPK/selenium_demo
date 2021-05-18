@@ -12,6 +12,8 @@ public class LogINSuite extends BaseTest {
         menu.GoHomePage();
         menu.LoginUser("Selenium", "prueba123");
         menu.verifyUserLogIn();
+
+        System.out.println("Test correctUserLogIn OK");
     }
  
     @Test
@@ -21,6 +23,8 @@ public class LogINSuite extends BaseTest {
         menu.GoHomePage();
         menu.LoginUser("Selenium", "badpass");
         menu.verifyWrongPass();
+
+        System.out.println("Test wrongUserPasswordLogIN OK");
     }
 
     @Test
@@ -32,5 +36,7 @@ public class LogINSuite extends BaseTest {
         menu.LogOutUser();
 
         menu.verifyLogOutUser();
+
+        System.out.println("Test correctUserLogOut OK");
     }
 }
