@@ -15,6 +15,7 @@ public class BaseTest {
         System.setProperty("webdriver.chrome.driver", "C:\\selenium_drivers\\chromedriver.exe");
         opt = new ChromeOptions();
         opt.addArguments("--no-sandbox");
+        opt.addArguments("headless");
     }
 
     @BeforeMethod
